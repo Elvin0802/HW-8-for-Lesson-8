@@ -33,7 +33,6 @@ public class Worker: Person
 			}
 		}
 	}
-
 	public override string ToString()
 	{
 		return (base.ToString() + $"Position : {Position}\nJob Start Time : {StartTime.ToString()}\n\nJob End Time : {EndTime.ToString()}\n");
