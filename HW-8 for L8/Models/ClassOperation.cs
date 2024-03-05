@@ -6,6 +6,7 @@ public class Operation
 
     public string ProcessName { get; set; }
 	public DateTime ProcessDate { get; set; }
+	public bool Status { get; set; }
 
     public Operation(string processName, DateTime processDate)
     {
@@ -18,6 +19,11 @@ public class Operation
 	public override string ToString()
 	{
 		return $"ID : {Id.ToString()}\nProcess Name : {ProcessName}\nProcess Date : {ProcessDate.ToString()}";
+	}
+
+	public void ChangeStatus()
+	{
+		Status= (!Status);
 	}
 
 }

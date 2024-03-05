@@ -5,7 +5,7 @@ public class Client : Person
 	public string LiveAddress { get; set; }
 	public string WorkAddress { get; set; }
 
-	public Client(string name, string surname, int age, int salary, string liveAddress, string workAddress)
+	public Client(string name, string surname, int age, double salary, string liveAddress, string workAddress)
 		: base(name, surname, age, salary)
 	{
 		LiveAddress = liveAddress;
